@@ -9,7 +9,7 @@ const Accordion = ({ items }) => {
 
     const renderedItems = items.map((item, i) => {
         const active = i === activeIndex ? 'active' : '';
-        
+
         return (
             <div key={i}>
                 <div 
@@ -28,7 +28,6 @@ const Accordion = ({ items }) => {
 
     return <div className="ui styled accordion">
         {renderedItems}
-        {activeIndex}
     </div>
 }
 
