@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Accordion from './Accordion';
 import Search from './Search';
 import Dropdown from './Dropdown';
+import Translate from './Translate';
 
 const items = [
     {
@@ -39,7 +40,8 @@ const App = () => {
         <>
             {/*<Accordion items={items} />*/}
             {/*<Search />*/}
-            <Dropdown selected={selected} onSelectedChange={setSelected} options={options} />
+            {/*<Dropdown selected={selected} onSelectedChange={setSelected} options={options} />*/}
+            <Translate />
         </>
     )
 };
