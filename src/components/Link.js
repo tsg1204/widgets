@@ -5,7 +5,9 @@ const Link = ({ href, className, children }) => {
         event.preventDefault();
 
         window.history.pushState({}, '', href);
-        
+        //nav event
+        const navEvent = new PopStateEvent('popstate');
+        window.dispatchEvent(navEvent);
     }
 
     return (
