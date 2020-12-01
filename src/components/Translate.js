@@ -16,8 +16,8 @@ const options = [
     value: 'hi',
   },
   {
-      lavel: 'Dutch',
-      value: 'nl'
+    label: 'Dutch',
+    value: 'nl'
   },
 ];
 
