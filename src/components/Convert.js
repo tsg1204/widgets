@@ -1,8 +1,16 @@
 import React, { useState, useEffect} from 'react';
+import axios from 'axios';
+import { KEY } from './dev.js';
 
 const Convert = ( { language, text }) => {
     useEffect(() => {
-        console.log('New language or text');
+        axios.post('https://translation.googleapis.com/language/translate/v2', {}, {
+            params: {
+                q: text,
+                target: language.value,
+                key: KEY
+            }
+        })
 
     }, [language, text]);
 
